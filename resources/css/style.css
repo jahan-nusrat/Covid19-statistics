@@ -1,0 +1,127 @@
+/*                  LOAD FONTS                    */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+
+/*                    GENERAL                     */
+
+/* ---------------------------------------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.fadeIn {
+    animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ---------------------------------------------- */
+
+/*                    HEADER                      */
+
+/* ---------------------------------------------- */
+
+/* -------- LOGO -------- */
+
+.logo {
+    width: 60px;
+}
+
+.logo-text {
+    text-align: center;
+    font-weight: 700;
+    color: #7934A4;
+}
+
+/* -------- NAV -------- */
+
+.nav-link {
+    color: #9B2EAE !important;
+}
+
+/* ---------------------------------------------- */
+
+/*                      MAIN                      */
+
+/* ---------------------------------------------- */
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.77)), url('../img/bg.jpg') center/cover;
+    width: 100%;
+    color: #ffffff;
+}
+
+.stats {
+    padding: 3rem 0;
+}
+
+/* -------- BG IMAGE -------- */
+
+/* -------- LATEST REPORT -------- */
+
+.country, .total-cases, .recovered, .deaths {
+    height: 100px;
+}
+
+.name {
+    font-size: 2rem;
+    color: #be64f1;
+    font-weight: 600;
+}
+
+.change {
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1.4rem;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.new-value {
+    font-size: 1.3rem;
+}
+
+/* -------- CHART -------- */
+
+.chart {
+    height: 70vh;
+    min-height: 500px;
+    background-color: #c983f17e;
+    margin: 3rem 0;
+}
+
+/* -------- SEARCH COUNTRY -------- */
+
+/* SCROLL BAR */
+
+/* ---------------------------------------------- */
+
+/*                    FOOTER                      */
+
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+
+/*             SCREEN WIDTH < 600px               */
+
+/* ---------------------------------------------- */
