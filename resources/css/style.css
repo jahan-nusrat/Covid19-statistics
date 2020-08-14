@@ -40,6 +40,16 @@ body {
 
 .logo {
     width: 60px;
+    animation: rotate 2.8s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .logo-text {
@@ -61,7 +71,8 @@ body {
 /* ---------------------------------------------- */
 
 main {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.77)), url('../img/bg.jpg') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85)), url('../img/bg.jpg') center/cover;
+    filter: grayscale(80px);
     width: 100%;
     color: #ffffff;
 }
@@ -111,6 +122,38 @@ main {
 }
 
 /* -------- SEARCH COUNTRY -------- */
+
+.search-country {
+    position: relative;
+}
+
+.search-box {
+    position: absolute;
+    z-index: 1;
+    background-color: #111;
+}
+
+.search-box input {
+    border: none;
+    transition: all 0.4s linear;
+    background-color: transparent;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.close {
+    width: 17px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
 
 /* SCROLL BAR */
 
