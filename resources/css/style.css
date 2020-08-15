@@ -121,15 +121,21 @@ main {
     margin: 3rem 0;
 }
 
+/* canvas {
+    background-color: cadetblue;
+} */
+
 /* -------- SEARCH COUNTRY -------- */
 
 .search-country {
     position: relative;
+    z-index: 2;
 }
 
 .search-box {
     position: absolute;
     z-index: 1;
+    top: 0;
     background-color: #111;
 }
 
@@ -155,13 +161,67 @@ main {
     cursor: pointer;
 }
 
+.country-list {
+    justify-content: space-between;
+    height: 300px;
+    background-color: #111;
+    position: absolute;
+    top: 38px;
+    opacity: 0.9;
+    overflow-y: scroll;
+}
+
+.country-list ul {
+    list-style: none;
+}
+
+.country-list ul li {
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.country-list ul li:hover {
+    border-left: 1px solid #fff;
+}
+
 /* SCROLL BAR */
 
 /* ---------------------------------------------- */
 
+/* width */
+
+.country-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+.country-list::-webkit-scrollbar-track {
+    background: #111111;
+}
+
+/* Handle */
+
+.country-list::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}
+
+/* Handle on hover */
+
+.country-list::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
 /*                    FOOTER                      */
 
 /* ---------------------------------------------- */
+
+footer {
+    color: #111;
+}
 
 /* ---------------------------------------------- */
 

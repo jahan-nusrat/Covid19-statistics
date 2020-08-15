@@ -812,3 +812,71 @@ let countryList = [{
         code: 'CN'
     }
 ];
+
+//select country elements
+const searchCountry = document.querySelector('.search-country')
+const changeCountry = document.querySelector('.change')
+const closeIcon = document.querySelector('.close')
+const countryListDIv = document.querySelector('.country-list')
+const searchInput = document.getElementById('search-input')
+
+function createCountryList() {
+    changeCountry.addEventListener('click', function (e) {
+        searchCountry.classList.toggle('d-none');
+        searchCountry.classList.add('fadeIn')
+        searchInput.focus();
+        searchInput.value = '';
+        li.forEach(showCountry => {
+            showCountry.style.color = '#fff';
+            showCountry.style.opacity = '1';
+            showCountry.style.fontWeight = '300';
+        })
+    })
+    closeIcon.addEventListener('click', function (e) {
+        searchCountry.classList.remove('d-block')
+        searchCountry.classList.add('d-none')
+    })
+    for (let i = 0; i < countryList.length; i++) {
+        countryListDIv.innerHTML +=
+            `
+        <ul class="list-${i} col-md-6 col-lg-4 col-4">
+            <li id="${countryList[i].name}">${countryList[i].name}</li>
+        </ul>
+        `;
+    }
+}
+createCountryList()
+
+const li = document.querySelectorAll('.country-list ul li')
+const ul = document.querySelectorAll('.country-list ul')
+li.forEach(listItem => {
+    listItem.addEventListener('click', function (e) {
+        searchCountry.classList.toggle('d-none')
+    })
+})
+
+searchInput.addEventListener('input', function () {
+    let value = searchInput.value.toUpperCase();
+    countryList.forEach(country => {
+        let showCountry = document.getElementById(country.name)
+        if (value === '') {
+            showCountry.style.color = '#fff';
+            showCountry.style.opacity = '1';
+            showCountry.style.fontWeight = '300';
+        } else {
+            if (country.name.toUpperCase().startsWith(value)) {
+                showCountry.classList.add('d-block');
+                showCountry.style.opacity = '1';
+                showCountry.style.color = '#E37731';
+                showCountry.style.fontWeight = '600';
+
+            } else {
+                //document.getElementById(country.name).classList.add('d-none')
+                showCountry.classList.add('d-block')
+                showCountry.style.opacity = '0.4';
+                showCountry.style.color = '#fff'
+            }
+        }
+
+    })
+})
