@@ -877,7 +877,7 @@ fetchData(userCountry);
 /* Update UI controller */
 function updateUI() {
 	updateStats()
-	//linearChart()
+	linearChart()
 }
 
 /* select all elements */
@@ -891,7 +891,7 @@ const ctx = document.getElementById('linear-chart').getContext('2d');
 let countryName = document.querySelector('.name')
 
 
-/* Chart update */
+/* statistics update */
 function updateStats() {
 	let totalNewCase = caseData[caseData.length - 1] - caseData[caseData.length - 2];
 	let prevData = appData[appData.length - 2]
@@ -915,4 +915,28 @@ function showPrevData(arr) {
 	} else {
 		return prevVal
 	}
+}
+
+/* Chart Update */
+let myChart;
+
+function linearChart() {
+	myChart = new Chart(ctx, {
+		type: 'radar',
+		data: {
+			datasets: [{
+				label: 'First dataset',
+				data: [0, 20, 40, 50]
+			}],
+			labels: ['January', 'February', 'March', 'April']
+		},
+		options: {
+			scale: {
+				ticks: {
+					suggestedMin: 50,
+					suggestedMax: 100
+				}
+			}
+		}
+	});
 }
