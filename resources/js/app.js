@@ -812,7 +812,17 @@ countryList = [{
 	}
 ];
 
+/* select all elements */
+const totalCaseValue = document.querySelector('.total-cases .value');
+const totalCaseNewValue = document.querySelector('.total-cases .new-value');
+const recoveredCaseValue = document.querySelector('.recovered .value');
+const recoveredCaseNewValue = document.querySelector('.recovered .new-value');
+const deathsCaseValue = document.querySelector('.deaths .value');
+const deathsCaseNewValue = document.querySelector('.deaths .new-value');
+const ctx = document.getElementById('linear-chart').getContext('2d');
+let countryName = document.querySelector('.name')
 const valueColor = document.querySelectorAll('.value');
+
 let colorArr = ['#ffffff', '#009688', '#f44336'];
 for (let i = 0; i < valueColor.length && i < colorArr.length; i++) {
 	valueColor[i].style.color = colorArr[i];
@@ -824,6 +834,7 @@ let caseData = [];
 let recoverData = [];
 let deathData = [];
 let dates = [];
+let formateDates = []
 
 /* get user country code */
 const countryCode = geoplugin_countryCode();
@@ -835,7 +846,8 @@ countryList.forEach((country) => {
 });
 
 function fetchData(userCountry) {
-	caseData = [], recoverData = [], deathData = [], dates = [];
+	countryName.innerHTML = 'Loading...'
+	caseData = [], recoverData = [], deathData = [], dates = [], formateDates = [];
 	fetch(`https://api.covid19api.com/total/dayone/country/${userCountry}`)
 		.then(response => {
 			return response.json()
@@ -863,17 +875,6 @@ function updateUI() {
 	updateStats()
 	linearChart()
 }
-
-/* select all elements */
-const totalCaseValue = document.querySelector('.total-cases .value');
-const totalCaseNewValue = document.querySelector('.total-cases .new-value');
-const recoveredCaseValue = document.querySelector('.recovered .value');
-const recoveredCaseNewValue = document.querySelector('.recovered .new-value');
-const deathsCaseValue = document.querySelector('.deaths .value');
-const deathsCaseNewValue = document.querySelector('.deaths .new-value');
-const ctx = document.getElementById('linear-chart').getContext('2d');
-let countryName = document.querySelector('.name')
-
 
 /* statistics update */
 function updateStats() {
@@ -941,4 +942,12 @@ function linearChart() {
 			maintainAspectRatio: false,
 		}
 	});
+};
+
+/* Format Dates */
+let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+function formatDate(dateStr) {
+	let date = new Date(dateStr)
+	return `${date.getDate()} ${months[date.getMonth()]}`
 }
