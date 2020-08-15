@@ -851,6 +851,7 @@ countryList.forEach((country) => {
 console.log(userCountry);
 
 function fetchData(userCountry) {
+	caseData = [], recoverData = [], deathData = [], dates = [];
 	fetch(`https://api.covid19api.com/total/dayone/country/${userCountry}`)
 		.then(response => {
 			return response.json()
@@ -921,22 +922,40 @@ function showPrevData(arr) {
 let myChart;
 
 function linearChart() {
+	if (myChart) {
+		myChart.destroy()
+	}
+
 	myChart = new Chart(ctx, {
-		type: 'radar',
+		type: 'line',
 		data: {
 			datasets: [{
-				label: 'First dataset',
-				data: [0, 20, 40, 50]
-			}],
-			labels: ['January', 'February', 'March', 'April']
+				label: 'Cases',
+				data: caseData,
+				fill: false,
+				borderColor: '#ffffff',
+				borderWidth: 1,
+				backgroundColor: '#f1f1f1'
+			}, {
+				label: 'Recovered',
+				data: recoverData,
+				fill: false,
+				borderColor: '#009688',
+				borderWidth: 1,
+				backgroundColor: '#009688'
+			}, {
+				label: 'Deaths',
+				data: deathData,
+				fill: false,
+				borderColor: '#f44336',
+				borderWidth: 1,
+				backgroundColor: '#f44336'
+			}, ],
+			labels: dates
 		},
 		options: {
-			scale: {
-				ticks: {
-					suggestedMin: 50,
-					suggestedMax: 100
-				}
-			}
+			responsive: true,
+			maintainAspectRatio: false,
 		}
 	});
 }
