@@ -1,815 +1,814 @@
-countryList = [
-	{
-		name : 'USA',
-		code : 'US'
+countryList = [{
+		name: 'USA',
+		code: 'US'
 	},
 	{
-		name : 'Spain',
-		code : 'ES'
+		name: 'Spain',
+		code: 'ES'
 	},
 	{
-		name : 'Italy',
-		code : 'IT'
+		name: 'Italy',
+		code: 'IT'
 	},
 	{
-		name : 'France',
-		code : 'FR'
+		name: 'France',
+		code: 'FR'
 	},
 	{
-		name : 'Germany',
-		code : 'DE'
+		name: 'Germany',
+		code: 'DE'
 	},
 	{
-		name : 'UK',
-		code : 'GB'
+		name: 'UK',
+		code: 'GB'
 	},
 	{
-		name : 'Turkey',
-		code : 'TR'
+		name: 'Turkey',
+		code: 'TR'
 	},
 	{
-		name : 'Iran',
-		code : 'IR'
+		name: 'Iran',
+		code: 'IR'
 	},
 	{
-		name : 'Russia',
-		code : 'RU'
+		name: 'Russia',
+		code: 'RU'
 	},
 	{
-		name : 'Belgium',
-		code : 'BE'
+		name: 'Belgium',
+		code: 'BE'
 	},
 	{
-		name : 'Brazil',
-		code : 'BR'
+		name: 'Brazil',
+		code: 'BR'
 	},
 	{
-		name : 'Canada',
-		code : 'CA'
+		name: 'Canada',
+		code: 'CA'
 	},
 	{
-		name : 'Netherlands',
-		code : 'NL'
+		name: 'Netherlands',
+		code: 'NL'
 	},
 	{
-		name : 'Switzerland',
-		code : 'CH'
+		name: 'Switzerland',
+		code: 'CH'
 	},
 	{
-		name : 'Portugal',
-		code : 'PT'
+		name: 'Portugal',
+		code: 'PT'
 	},
 	{
-		name : 'India',
-		code : 'IN'
+		name: 'India',
+		code: 'IN'
 	},
 	{
-		name : 'Ireland',
-		code : 'IE'
+		name: 'Ireland',
+		code: 'IE'
 	},
 	{
-		name : 'Austria',
-		code : 'AT'
+		name: 'Austria',
+		code: 'AT'
 	},
 	{
-		name : 'Peru',
-		code : 'PE'
+		name: 'Peru',
+		code: 'PE'
 	},
 	{
-		name : 'Sweden',
-		code : 'SE'
+		name: 'Sweden',
+		code: 'SE'
 	},
 	{
-		name : 'Japan',
-		code : 'JP'
+		name: 'Japan',
+		code: 'JP'
 	},
 	{
-		name : 'S. Korea',
-		code : 'KR'
+		name: 'S. Korea',
+		code: 'KR'
 	},
 	{
-		name : 'Chile',
-		code : 'CL'
+		name: 'Chile',
+		code: 'CL'
 	},
 	{
-		name : 'Saudi Arabia',
-		code : 'SA'
+		name: 'Saudi Arabia',
+		code: 'SA'
 	},
 	{
-		name : 'Poland',
-		code : 'PL'
+		name: 'Poland',
+		code: 'PL'
 	},
 	{
-		name : 'Ecuador',
-		code : 'EC'
+		name: 'Ecuador',
+		code: 'EC'
 	},
 	{
-		name : 'Romania',
-		code : 'RO'
+		name: 'Romania',
+		code: 'RO'
 	},
 	{
-		name : 'Pakistan',
-		code : 'PK'
+		name: 'Pakistan',
+		code: 'PK'
 	},
 	{
-		name : 'Mexico',
-		code : 'MX'
+		name: 'Mexico',
+		code: 'MX'
 	},
 	{
-		name : 'Denmark',
-		code : 'DK'
+		name: 'Denmark',
+		code: 'DK'
 	},
 	{
-		name : 'Norway',
-		code : 'NO'
+		name: 'Norway',
+		code: 'NO'
 	},
 	{
-		name : 'UAE',
-		code : 'AE'
+		name: 'UAE',
+		code: 'AE'
 	},
 	{
-		name : 'Czechia',
-		code : 'CZ'
+		name: 'Czechia',
+		code: 'CZ'
 	},
 	{
-		name : 'Australia',
-		code : 'AU'
+		name: 'Australia',
+		code: 'AU'
 	},
 	{
-		name : 'Singapore',
-		code : 'SG'
+		name: 'Singapore',
+		code: 'SG'
 	},
 	{
-		name : 'Indonesia',
-		code : 'ID'
+		name: 'Indonesia',
+		code: 'ID'
 	},
 	{
-		name : 'Serbia',
-		code : 'RS'
+		name: 'Serbia',
+		code: 'RS'
 	},
 	{
-		name : 'Philippines',
-		code : 'PH'
+		name: 'Philippines',
+		code: 'PH'
 	},
 	{
-		name : 'Ukraine',
-		code : 'UA'
+		name: 'Ukraine',
+		code: 'UA'
 	},
 	{
-		name : 'Qatar',
-		code : 'QA'
+		name: 'Qatar',
+		code: 'QA'
 	},
 	{
-		name : 'Malaysia',
-		code : 'MY'
+		name: 'Malaysia',
+		code: 'MY'
 	},
 	{
-		name : 'Belarus',
-		code : 'BY'
+		name: 'Belarus',
+		code: 'BY'
 	},
 	{
-		name : 'Dominican Republic',
-		code : 'DO'
+		name: 'Dominican Republic',
+		code: 'DO'
 	},
 	{
-		name : 'Panama',
-		code : 'PA'
+		name: 'Panama',
+		code: 'PA'
 	},
 	{
-		name : 'Finland',
-		code : 'FI'
+		name: 'Finland',
+		code: 'FI'
 	},
 	{
-		name : 'Colombia',
-		code : 'CO'
+		name: 'Colombia',
+		code: 'CO'
 	},
 	{
-		name : 'Luxembourg',
-		code : 'LU'
+		name: 'Luxembourg',
+		code: 'LU'
 	},
 	{
-		name : 'South Africa',
-		code : 'ZA'
+		name: 'South Africa',
+		code: 'ZA'
 	},
 	{
-		name : 'Egypt',
-		code : 'EG'
+		name: 'Egypt',
+		code: 'EG'
 	},
 	{
-		name : 'Argentina',
-		code : 'AR'
+		name: 'Argentina',
+		code: 'AR'
 	},
 	{
-		name : 'Morocco',
-		code : 'MA'
+		name: 'Morocco',
+		code: 'MA'
 	},
 	{
-		name : 'Thailand',
-		code : 'TH'
+		name: 'Thailand',
+		code: 'TH'
 	},
 	{
-		name : 'Algeria',
-		code : 'DZ'
+		name: 'Algeria',
+		code: 'DZ'
 	},
 	{
-		name : 'Moldova',
-		code : 'MD'
+		name: 'Moldova',
+		code: 'MD'
 	},
 	{
-		name : 'Bangladesh',
-		code : 'BD'
+		name: 'Bangladesh',
+		code: 'BD'
 	},
 	{
-		name : 'Greece',
-		code : 'GR'
+		name: 'Greece',
+		code: 'GR'
 	},
 	{
-		name : 'Hungary',
-		code : 'HU'
+		name: 'Hungary',
+		code: 'HU'
 	},
 	{
-		name : 'Kuwait',
-		code : 'KW'
+		name: 'Kuwait',
+		code: 'KW'
 	},
 	{
-		name : 'Bahrain',
-		code : 'BH'
+		name: 'Bahrain',
+		code: 'BH'
 	},
 	{
-		name : 'Croatia',
-		code : 'HR'
+		name: 'Croatia',
+		code: 'HR'
 	},
 	{
-		name : 'Iceland',
-		code : 'IS'
+		name: 'Iceland',
+		code: 'IS'
 	},
 	{
-		name : 'Kazakhstan',
-		code : 'KZ'
+		name: 'Kazakhstan',
+		code: 'KZ'
 	},
 	{
-		name : 'Uzbekistan',
-		code : 'UZ'
+		name: 'Uzbekistan',
+		code: 'UZ'
 	},
 	{
-		name : 'Estonia',
-		code : 'EE'
+		name: 'Estonia',
+		code: 'EE'
 	},
 	{
-		name : 'Iraq',
-		code : 'IQ'
+		name: 'Iraq',
+		code: 'IQ'
 	},
 	{
-		name : 'New Zealand',
-		code : 'NZ'
+		name: 'New Zealand',
+		code: 'NZ'
 	},
 	{
-		name : 'Azerbaijan',
-		code : 'AZ'
+		name: 'Azerbaijan',
+		code: 'AZ'
 	},
 	{
-		name : 'Slovenia',
-		code : 'SI'
+		name: 'Slovenia',
+		code: 'SI'
 	},
 	{
-		name : 'Lithuania',
-		code : 'LT'
+		name: 'Lithuania',
+		code: 'LT'
 	},
 	{
-		name : 'Armenia',
-		code : 'AM'
+		name: 'Armenia',
+		code: 'AM'
 	},
 	{
-		name : 'Bosnia and Herzegovina',
-		code : 'BA'
+		name: 'Bosnia and Herzegovina',
+		code: 'BA'
 	},
 	{
-		name : 'Oman',
-		code : 'OM'
+		name: 'Oman',
+		code: 'OM'
 	},
 	{
-		name : 'North Macedonia',
-		code : 'MK'
+		name: 'North Macedonia',
+		code: 'MK'
 	},
 	{
-		name : 'Slovakia',
-		code : 'SK'
+		name: 'Slovakia',
+		code: 'SK'
 	},
 	{
-		name : 'Cuba',
-		code : 'CU'
+		name: 'Cuba',
+		code: 'CU'
 	},
 	{
-		name : 'Hong Kong',
-		code : 'HK'
+		name: 'Hong Kong',
+		code: 'HK'
 	},
 	{
-		name : 'Cameroon',
-		code : 'CM'
+		name: 'Cameroon',
+		code: 'CM'
 	},
 	{
-		name : 'Afghanistan',
-		code : 'AF'
+		name: 'Afghanistan',
+		code: 'AF'
 	},
 	{
-		name : 'Bulgaria',
-		code : 'BG'
+		name: 'Bulgaria',
+		code: 'BG'
 	},
 	{
-		name : 'Tunisia',
-		code : 'TN'
+		name: 'Tunisia',
+		code: 'TN'
 	},
 	{
-		name : 'Ghana',
-		code : 'GH'
+		name: 'Ghana',
+		code: 'GH'
 	},
 	{
-		name : 'Ivory Coast',
-		code : 'CI'
+		name: 'Ivory Coast',
+		code: 'CI'
 	},
 	{
-		name : 'Cyprus',
-		code : 'CY'
+		name: 'Cyprus',
+		code: 'CY'
 	},
 	{
-		name : 'Djibouti',
-		code : 'DJ'
+		name: 'Djibouti',
+		code: 'DJ'
 	},
 	{
-		name : 'Latvia',
-		code : 'LV'
+		name: 'Latvia',
+		code: 'LV'
 	},
 	{
-		name : 'Andorra',
-		code : 'AD'
+		name: 'Andorra',
+		code: 'AD'
 	},
 	{
-		name : 'Lebanon',
-		code : 'LB'
+		name: 'Lebanon',
+		code: 'LB'
 	},
 	{
-		name : 'Costa Rica',
-		code : 'CR'
+		name: 'Costa Rica',
+		code: 'CR'
 	},
 	{
-		name : 'Niger',
-		code : 'NE'
+		name: 'Niger',
+		code: 'NE'
 	},
 	{
-		name : 'Burkina Faso',
-		code : 'BF'
+		name: 'Burkina Faso',
+		code: 'BF'
 	},
 	{
-		name : 'Albania',
-		code : 'AL'
+		name: 'Albania',
+		code: 'AL'
 	},
 	{
-		name : 'Kyrgyzstan',
-		code : 'KG'
+		name: 'Kyrgyzstan',
+		code: 'KG'
 	},
 	{
-		name : 'Nigeria',
-		code : 'NG'
+		name: 'Nigeria',
+		code: 'NG'
 	},
 	{
-		name : 'Bolivia',
-		code : 'BO'
+		name: 'Bolivia',
+		code: 'BO'
 	},
 	{
-		name : 'Guinea',
-		code : 'GN'
+		name: 'Guinea',
+		code: 'GN'
 	},
 	{
-		name : 'Uruguay',
-		code : 'UY'
+		name: 'Uruguay',
+		code: 'UY'
 	},
 	{
-		name : 'Honduras',
-		code : 'HN'
+		name: 'Honduras',
+		code: 'HN'
 	},
 	{
-		name : 'San Marino',
-		code : 'SM'
+		name: 'San Marino',
+		code: 'SM'
 	},
 	{
-		name : 'Palestine',
-		code : 'PS'
+		name: 'Palestine',
+		code: 'PS'
 	},
 	{
-		name : 'Malta',
-		code : 'MT'
+		name: 'Malta',
+		code: 'MT'
 	},
 	{
-		name : 'Taiwan',
-		code : 'TW'
+		name: 'Taiwan',
+		code: 'TW'
 	},
 	{
-		name : 'Jordan',
-		code : 'JO'
+		name: 'Jordan',
+		code: 'JO'
 	},
 	{
-		name : 'Réunion',
-		code : 'RE'
+		name: 'Réunion',
+		code: 'RE'
 	},
 	{
-		name : 'Georgia',
-		code : 'GE'
+		name: 'Georgia',
+		code: 'GE'
 	},
 	{
-		name : 'Senegal',
-		code : 'SN'
+		name: 'Senegal',
+		code: 'SN'
 	},
 	{
-		name : 'Mauritius',
-		code : 'MU'
+		name: 'Mauritius',
+		code: 'MU'
 	},
 	{
-		name : 'DRC',
-		code : 'CD'
+		name: 'DRC',
+		code: 'CD'
 	},
 	{
-		name : 'Montenegro',
-		code : 'ME'
+		name: 'Montenegro',
+		code: 'ME'
 	},
 	{
-		name : 'Isle of Man',
-		code : 'IM'
+		name: 'Isle of Man',
+		code: 'IM'
 	},
 	{
-		name : 'Sri Lanka',
-		code : 'LK'
+		name: 'Sri Lanka',
+		code: 'LK'
 	},
 	{
-		name : 'Mayotte',
-		code : 'YT'
+		name: 'Mayotte',
+		code: 'YT'
 	},
 	{
-		name : 'Kenya',
-		code : 'KE'
+		name: 'Kenya',
+		code: 'KE'
 	},
 	{
-		name : 'Vietnam',
-		code : 'VN'
+		name: 'Vietnam',
+		code: 'VN'
 	},
 	{
-		name : 'Guatemala',
-		code : 'GT'
+		name: 'Guatemala',
+		code: 'GT'
 	},
 	{
-		name : 'Venezuela',
-		code : 'VE'
+		name: 'Venezuela',
+		code: 'VE'
 	},
 	{
-		name : 'Mali',
-		code : 'ML'
+		name: 'Mali',
+		code: 'ML'
 	},
 	{
-		name : 'Paraguay',
-		code : 'PY'
+		name: 'Paraguay',
+		code: 'PY'
 	},
 	{
-		name : 'El Salvador',
-		code : 'SV'
+		name: 'El Salvador',
+		code: 'SV'
 	},
 	{
-		name : 'Jamaica',
-		code : 'JM'
+		name: 'Jamaica',
+		code: 'JM'
 	},
 	{
-		name : 'Tanzania',
-		code : 'TZ'
+		name: 'Tanzania',
+		code: 'TZ'
 	},
 	{
-		name : 'Martinique',
-		code : 'MQ'
+		name: 'Martinique',
+		code: 'MQ'
 	},
 	{
-		name : 'Guadeloupe',
-		code : 'GP'
+		name: 'Guadeloupe',
+		code: 'GP'
 	},
 	{
-		name : 'Rwanda',
-		code : 'RW'
+		name: 'Rwanda',
+		code: 'RW'
 	},
 	{
-		name : 'Congo',
-		code : 'CG'
+		name: 'Congo',
+		code: 'CG'
 	},
 	{
-		name : 'Brunei',
-		code : 'BN'
+		name: 'Brunei',
+		code: 'BN'
 	},
 	{
-		name : 'Somalia',
-		code : 'SO'
+		name: 'Somalia',
+		code: 'SO'
 	},
 	{
-		name : 'Gibraltar',
-		code : 'GI'
+		name: 'Gibraltar',
+		code: 'GI'
 	},
 	{
-		name : 'Cambodia',
-		code : 'KH'
+		name: 'Cambodia',
+		code: 'KH'
 	},
 	{
-		name : 'Madagascar',
-		code : 'MG'
+		name: 'Madagascar',
+		code: 'MG'
 	},
 	{
-		name : 'Trinidad and Tobago',
-		code : 'TT'
+		name: 'Trinidad and Tobago',
+		code: 'TT'
 	},
 	{
-		name : 'Gabon',
-		code : 'GA'
+		name: 'Gabon',
+		code: 'GA'
 	},
 	{
-		name : 'Myanmar',
-		code : 'MM'
+		name: 'Myanmar',
+		code: 'MM'
 	},
 	{
-		name : 'Ethiopia',
-		code : 'ET'
+		name: 'Ethiopia',
+		code: 'ET'
 	},
 	{
-		name : 'Aruba',
-		code : 'AW'
+		name: 'Aruba',
+		code: 'AW'
 	},
 	{
-		name : 'French Guiana',
-		code : 'GF'
+		name: 'French Guiana',
+		code: 'GF'
 	},
 	{
-		name : 'Monaco',
-		code : 'MC'
+		name: 'Monaco',
+		code: 'MC'
 	},
 	{
-		name : 'Bermuda',
-		code : 'BM'
+		name: 'Bermuda',
+		code: 'BM'
 	},
 	{
-		name : 'Togo',
-		code : 'TG'
+		name: 'Togo',
+		code: 'TG'
 	},
 	{
-		name : 'Liechtenstein',
-		code : 'LI'
+		name: 'Liechtenstein',
+		code: 'LI'
 	},
 	{
-		name : 'Equatorial Guinea',
-		code : 'GQ'
+		name: 'Equatorial Guinea',
+		code: 'GQ'
 	},
 	{
-		name : 'Liberia',
-		code : 'LR'
+		name: 'Liberia',
+		code: 'LR'
 	},
 	{
-		name : 'Barbados',
-		code : 'BB'
+		name: 'Barbados',
+		code: 'BB'
 	},
 	{
-		name : 'Sudan',
-		code : 'SD'
+		name: 'Sudan',
+		code: 'SD'
 	},
 	{
-		name : 'Guyana',
-		code : 'GY'
+		name: 'Guyana',
+		code: 'GY'
 	},
 	{
-		name : 'Zambia',
-		code : 'ZM'
+		name: 'Zambia',
+		code: 'ZM'
 	},
 	{
-		name : 'Cabo Verde',
-		code : 'CV'
+		name: 'Cabo Verde',
+		code: 'CV'
 	},
 	{
-		name : 'Cayman Islands',
-		code : 'KY'
+		name: 'Cayman Islands',
+		code: 'KY'
 	},
 	{
-		name : 'Bahamas',
-		code : 'BS'
+		name: 'Bahamas',
+		code: 'BS'
 	},
 	{
-		name : 'French Polynesia',
-		code : 'PF'
+		name: 'French Polynesia',
+		code: 'PF'
 	},
 	{
-		name : 'Uganda',
-		code : 'UG'
+		name: 'Uganda',
+		code: 'UG'
 	},
 	{
-		name : 'Maldives',
-		code : 'MV'
+		name: 'Maldives',
+		code: 'MV'
 	},
 	{
-		name : 'Libya',
-		code : 'LY'
+		name: 'Libya',
+		code: 'LY'
 	},
 	{
-		name : 'Guinea-Bissau',
-		code : 'GW'
+		name: 'Guinea-Bissau',
+		code: 'GW'
 	},
 	{
-		name : 'Macao',
-		code : 'MO'
+		name: 'Macao',
+		code: 'MO'
 	},
 	{
-		name : 'Haiti',
-		code : 'HT'
+		name: 'Haiti',
+		code: 'HT'
 	},
 	{
-		name : 'Syria',
-		code : 'SY'
+		name: 'Syria',
+		code: 'SY'
 	},
 	{
-		name : 'Eritrea',
-		code : 'ER'
+		name: 'Eritrea',
+		code: 'ER'
 	},
 	{
-		name : 'Mozambique',
-		code : 'MZ'
+		name: 'Mozambique',
+		code: 'MZ'
 	},
 	{
-		name : 'Saint Martin',
-		code : 'MF'
+		name: 'Saint Martin',
+		code: 'MF'
 	},
 	{
-		name : 'Benin',
-		code : 'BJ'
+		name: 'Benin',
+		code: 'BJ'
 	},
 	{
-		name : 'Chad',
-		code : 'TD'
+		name: 'Chad',
+		code: 'TD'
 	},
 	{
-		name : 'Mongolia',
-		code : 'MN'
+		name: 'Mongolia',
+		code: 'MN'
 	},
 	{
-		name : 'Nepal',
-		code : 'NP'
+		name: 'Nepal',
+		code: 'NP'
 	},
 	{
-		name : 'Sierra Leone',
-		code : 'SL'
+		name: 'Sierra Leone',
+		code: 'SL'
 	},
 	{
-		name : 'Zimbabwe',
-		code : 'ZW'
+		name: 'Zimbabwe',
+		code: 'ZW'
 	},
 	{
-		name : 'Angola',
-		code : 'AO'
+		name: 'Angola',
+		code: 'AO'
 	},
 	{
-		name : 'Antigua and Barbuda',
-		code : 'AG'
+		name: 'Antigua and Barbuda',
+		code: 'AG'
 	},
 	{
-		name : 'Eswatini',
-		code : 'SZ'
+		name: 'Eswatini',
+		code: 'SZ'
 	},
 	{
-		name : 'Botswana',
-		code : 'BW'
+		name: 'Botswana',
+		code: 'BW'
 	},
 	{
-		name : 'Timor-Leste',
-		code : 'TL'
+		name: 'Timor-Leste',
+		code: 'TL'
 	},
 	{
-		name : 'Belize',
-		code : 'BZ'
+		name: 'Belize',
+		code: 'BZ'
 	},
 	{
-		name : 'New Caledonia',
-		code : 'NC'
+		name: 'New Caledonia',
+		code: 'NC'
 	},
 	{
-		name : 'Malawi',
-		code : 'MW'
+		name: 'Malawi',
+		code: 'MW'
 	},
 	{
-		name : 'Fiji',
-		code : 'FJ'
+		name: 'Fiji',
+		code: 'FJ'
 	},
 	{
-		name : 'Dominica',
-		code : 'DM'
+		name: 'Dominica',
+		code: 'DM'
 	},
 	{
-		name : 'Namibia',
-		code : 'NA'
+		name: 'Namibia',
+		code: 'NA'
 	},
 	{
-		name : 'Saint Lucia',
-		code : 'LC'
+		name: 'Saint Lucia',
+		code: 'LC'
 	},
 	{
-		name : 'Grenada',
-		code : 'GD'
+		name: 'Grenada',
+		code: 'GD'
 	},
 	{
-		name : 'Saint Kitts and Nevis',
-		code : 'KN'
+		name: 'Saint Kitts and Nevis',
+		code: 'KN'
 	},
 	{
-		name : 'CAR',
-		code : 'CF'
+		name: 'CAR',
+		code: 'CF'
 	},
 	{
-		name : 'St. Vincent Grenadines',
-		code : 'VC'
+		name: 'St. Vincent Grenadines',
+		code: 'VC'
 	},
 	{
-		name : 'Turks and Caicos',
-		code : 'TC'
+		name: 'Turks and Caicos',
+		code: 'TC'
 	},
 	{
-		name : 'Falkland Islands',
-		code : 'FK'
+		name: 'Falkland Islands',
+		code: 'FK'
 	},
 	{
-		name : 'Greenland',
-		code : 'GL'
+		name: 'Greenland',
+		code: 'GL'
 	},
 	{
-		name : 'Montserrat',
-		code : 'MS'
+		name: 'Montserrat',
+		code: 'MS'
 	},
 	{
-		name : 'Seychelles',
-		code : 'SC'
+		name: 'Seychelles',
+		code: 'SC'
 	},
 	{
-		name : 'Suriname',
-		code : 'SR'
+		name: 'Suriname',
+		code: 'SR'
 	},
 	{
-		name : 'Nicaragua',
-		code : 'NI'
+		name: 'Nicaragua',
+		code: 'NI'
 	},
 	{
-		name : 'Gambia',
-		code : 'GM'
+		name: 'Gambia',
+		code: 'GM'
 	},
 	{
-		name : 'Vatican City',
-		code : 'VA'
+		name: 'Vatican City',
+		code: 'VA'
 	},
 	{
-		name : 'Mauritania',
-		code : 'MR'
+		name: 'Mauritania',
+		code: 'MR'
 	},
 	{
-		name : 'Papua New Guinea',
-		code : 'PG'
+		name: 'Papua New Guinea',
+		code: 'PG'
 	},
 	{
-		name : 'St. Barth',
-		code : 'BL'
+		name: 'St. Barth',
+		code: 'BL'
 	},
 	{
-		name : 'Burundi',
-		code : 'BI'
+		name: 'Burundi',
+		code: 'BI'
 	},
 	{
-		name : 'Bhutan',
-		code : 'BT'
+		name: 'Bhutan',
+		code: 'BT'
 	},
 	{
-		name : 'Caribbean Netherlands',
-		code : 'BQ'
+		name: 'Caribbean Netherlands',
+		code: 'BQ'
 	},
 	{
-		name : 'British Virgin Islands',
-		code : 'VG'
+		name: 'British Virgin Islands',
+		code: 'VG'
 	},
 	{
-		name : 'Sao Tome and Principe',
-		code : 'ST'
+		name: 'Sao Tome and Principe',
+		code: 'ST'
 	},
 	{
-		name : 'South Sudan',
-		code : 'SD'
+		name: 'South Sudan',
+		code: 'SD'
 	},
 	{
-		name : 'Anguilla',
-		code : 'AI'
+		name: 'Anguilla',
+		code: 'AI'
 	},
 	{
-		name : 'Saint Pierre Miquelon',
-		code : 'PM'
+		name: 'Saint Pierre Miquelon',
+		code: 'PM'
 	},
 	{
-		name : 'Yemen',
-		code : 'YE'
+		name: 'Yemen',
+		code: 'YE'
 	},
 	{
-		name : 'China',
-		code : 'CN'
+		name: 'China',
+		code: 'CN'
 	}
 ];
 /* fetch(
@@ -829,7 +828,7 @@ countryList = [
 		console.log(data);
 	}); */
 const valueColor = document.querySelectorAll('.value');
-let colorArr = [ '#ffffff', '#009688', '#f44336' ];
+let colorArr = ['#ffffff', '#009688', '#f44336'];
 for (let i = 0; i < valueColor.length && i < colorArr.length; i++) {
 	valueColor[i].style.color = colorArr[i];
 }
@@ -860,26 +859,37 @@ countryList.forEach((country) => {
 });
 console.log(userCountry);
 
-function fetchData (userCountry) {
-	fetch(`https://covid-19-data.p.rapidapi.com/country?format=json&name=Canada`, {
-		method  : 'GET',
-		headers : {
-			'x-rapidapi-host' : 'covid-19-data.p.rapidapi.com',
-			'x-rapidapi-key'  : '5ee0ca3e9fmshfe727949160f1dap1070edjsn4c8118fce945'
-		}
-	})
-		.then((response) => {
-			return response.json();
+function fetchData(userCountry) {
+	fetch(`https://api.covid19api.com/total/dayone/country/${userCountry}`)
+		.then(response => {
+			return response.json()
 		})
-		.then((data) => {
-			dates = Object.keys(data);
-			dates.forEach((date) => {
-				let Data = data[date];
-				appData.push(Data);
-				caseData.push(Data.confirmed);
-				recoverData.push(Data.recovered);
-				deathData.push(Data.deaths);
-			});
-		});
+		.then(data => {
+			console.log(data)
+			data.forEach(date => {
+					let allDate = date.Date;
+					let arrDate = allDate.split('T')
+					arrDate.pop();
+					dates.push(...arrDate)
+					appData.push(date)
+					caseData.push(date.Confirmed)
+					recoverData.push(date.Recovered)
+					deathData.push(date.Deaths)
+				})
+				.then(() => {
+					updateUI()
+				})
+		})
 }
 fetchData(userCountry);
+
+/* Update UI controller */
+function updateUI() {
+	updateStats()
+	//linearChart()
+}
+
+/* Chart update */
+function updateStats() {
+
+}
