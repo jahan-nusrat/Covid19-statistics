@@ -838,7 +838,7 @@ function createCountryList() {
         countryListDIv.innerHTML +=
             `
         <ul class="list-${i} col-md-6 col-lg-4 col-4">
-            <li id="${countryList[i].name}">${countryList[i].name}</li>
+            <li onclick="fetchData('${countryList[i].name}')" id="${countryList[i].name}">${countryList[i].name}</li>
         </ul>
         `;
     }

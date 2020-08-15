@@ -811,22 +811,7 @@ countryList = [{
 		code: 'CN'
 	}
 ];
-/* fetch(
-	`https://covid19-monitor-pro.p.rapidapi.com/coronavirus/cases_by_days_by_country.php?country=${userCountry}`,
-	{
-		method  : 'GET',
-		headers : {
-			'x-rapidapi-host' : 'covid19-monitor-pro.p.rapidapi.com',
-			'x-rapidapi-key'  : '5ee0ca3e9fmshfe727949160f1dap1070edjsn4c8118fce945'
-		}
-	}
-)
-	.then((response) => {
-		return response.json();
-	})
-	.then((data) => {
-		console.log(data);
-	}); */
+
 const valueColor = document.querySelectorAll('.value');
 let colorArr = ['#ffffff', '#009688', '#f44336'];
 for (let i = 0; i < valueColor.length && i < colorArr.length; i++) {
@@ -848,7 +833,6 @@ countryList.forEach((country) => {
 		userCountry = country.name;
 	}
 });
-console.log(userCountry);
 
 function fetchData(userCountry) {
 	caseData = [], recoverData = [], deathData = [], dates = [];
@@ -857,7 +841,6 @@ function fetchData(userCountry) {
 			return response.json()
 		})
 		.then(data => {
-			console.log(data)
 			data.forEach(date => {
 				let allDate = date.Date;
 				let arrDate = allDate.split('T')
