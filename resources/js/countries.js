@@ -827,9 +827,7 @@ function createCountryList() {
         searchInput.focus();
         searchInput.value = '';
         li.forEach(showCountry => {
-            showCountry.style.color = '#fff';
-            showCountry.style.opacity = '1';
-            showCountry.style.fontWeight = '300';
+            showCountryList(showCountry)
         })
     })
     closeIcon.addEventListener('click', function (e) {
@@ -860,16 +858,13 @@ searchInput.addEventListener('input', function () {
     countryList.forEach(country => {
         let showCountry = document.getElementById(country.name)
         if (value === '') {
-            showCountry.style.color = '#fff';
-            showCountry.style.opacity = '1';
-            showCountry.style.fontWeight = '300';
+            showCountryList(showCountry)
         } else {
             if (country.name.toUpperCase().startsWith(value)) {
                 showCountry.classList.add('d-block');
                 showCountry.style.opacity = '1';
                 showCountry.style.color = '#E37731';
                 showCountry.style.fontWeight = '600';
-
             } else {
                 //document.getElementById(country.name).classList.add('d-none')
                 showCountry.classList.add('d-block')
@@ -877,6 +872,11 @@ searchInput.addEventListener('input', function () {
                 showCountry.style.color = '#fff'
             }
         }
-
     })
 })
+
+function showCountryList(showCountry) {
+    showCountry.style.color = '#fff';
+    showCountry.style.opacity = '1';
+    showCountry.style.fontWeight = '300';
+}
