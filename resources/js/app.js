@@ -833,15 +833,6 @@ for (let i = 0; i < valueColor.length && i < colorArr.length; i++) {
 	valueColor[i].style.color = colorArr[i];
 }
 
-/* select all elements */
-const totalCaseValue = document.querySelector('.total-cases .value');
-const totalCaseNewValue = document.querySelector('.total-cases .new-value');
-const recoveredCaseValue = document.querySelector('.recovered .value');
-const recoveredCaseNewValue = document.querySelector('.recovered .new-value');
-const deathsCaseValue = document.querySelector('.deaths .value');
-const deathsCaseNewValue = document.querySelector('.deaths .new-value');
-const ctx = document.getElementById('linear-chart').getContext('2d');
-
 /* App variables */
 let appData = [];
 let caseData = [];
@@ -867,18 +858,18 @@ function fetchData(userCountry) {
 		.then(data => {
 			console.log(data)
 			data.forEach(date => {
-					let allDate = date.Date;
-					let arrDate = allDate.split('T')
-					arrDate.pop();
-					dates.push(...arrDate)
-					appData.push(date)
-					caseData.push(date.Confirmed)
-					recoverData.push(date.Recovered)
-					deathData.push(date.Deaths)
-				})
-				.then(() => {
-					updateUI()
-				})
+				let allDate = date.Date;
+				let arrDate = allDate.split('T')
+				arrDate.pop();
+				dates.push(...arrDate)
+				appData.push(date)
+				caseData.push(date.Confirmed)
+				recoverData.push(date.Recovered)
+				deathData.push(date.Deaths)
+			})
+		})
+		.then(() => {
+			updateUI()
 		})
 }
 fetchData(userCountry);
@@ -889,7 +880,39 @@ function updateUI() {
 	//linearChart()
 }
 
+/* select all elements */
+const totalCaseValue = document.querySelector('.total-cases .value');
+const totalCaseNewValue = document.querySelector('.total-cases .new-value');
+const recoveredCaseValue = document.querySelector('.recovered .value');
+const recoveredCaseNewValue = document.querySelector('.recovered .new-value');
+const deathsCaseValue = document.querySelector('.deaths .value');
+const deathsCaseNewValue = document.querySelector('.deaths .new-value');
+const ctx = document.getElementById('linear-chart').getContext('2d');
+let countryName = document.querySelector('.name')
+
+
 /* Chart update */
 function updateStats() {
+	let totalNewCase = caseData[caseData.length - 1] - caseData[caseData.length - 2];
+	let prevData = appData[appData.length - 2]
+	countryName.innerHTML = showLastData(appData).Country
+	totalCaseValue.innerHTML = `${showLastData(caseData)}`;
+	totalCaseNewValue.innerHTML = `+ ${showPrevData(caseData)}`;
+	recoveredCaseValue.innerHTML = `${showLastData(recoverData)}`;
+	recoveredCaseNewValue.innerHTML = `+ ${showPrevData(recoverData)}`;
+	deathsCaseValue.innerHTML = `${showLastData(deathData)}`;
+	deathsCaseNewValue.innerHTML = `+ ${showPrevData(deathData)}`;
+}
 
+function showLastData(arr) {
+	return arr[arr.length - 1]
+}
+
+function showPrevData(arr) {
+	let prevVal = arr[arr.length - 1] - arr[arr.length - 2];
+	if (prevVal <= 0) {
+		return 0
+	} else {
+		return prevVal
+	}
 }
