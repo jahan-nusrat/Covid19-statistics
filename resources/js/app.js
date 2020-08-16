@@ -873,10 +873,10 @@ function showPrevData(arr) {
 
 /* Chart Update */
 function linearChart() {
-	/* let myChart;
+	let myChart;
 	if (myChart) {
 		myChart.destroy()
-	} */
+	}
 	myChart = new Chart(ctx, {
 		type: 'line',
 		data: {
