@@ -845,37 +845,6 @@ countryList.forEach((country) => {
 	}
 });
 
-function fetchData(userCountry) {
-	countryName.innerHTML = 'Loading...'
-	caseData = [], recoverData = [], deathData = [], dates = [], formateDates = [];
-	fetch(`https://api.covid19api.com/total/dayone/country/${userCountry}`)
-		.then(response => {
-			return response.json()
-		})
-		.then(data => {
-			data.forEach(date => {
-				let allDate = date.Date;
-				let arrDate = allDate.split('T')
-				arrDate.pop();
-				dates.push(...arrDate)
-				appData.push(date)
-				caseData.push(date.Confirmed)
-				recoverData.push(date.Recovered)
-				deathData.push(date.Deaths)
-			})
-		})
-		.then(() => {
-			updateUI()
-		})
-}
-fetchData(userCountry);
-
-/* Update UI controller */
-function updateUI() {
-	updateStats()
-	linearChart()
-}
-
 /* statistics update */
 function updateStats() {
 	let totalNewCase = caseData[caseData.length - 1] - caseData[caseData.length - 2];
@@ -909,7 +878,6 @@ function linearChart() {
 	if (myChart) {
 		myChart.destroy()
 	}
-
 	myChart = new Chart(ctx, {
 		type: 'line',
 		data: {
@@ -943,6 +911,36 @@ function linearChart() {
 		}
 	});
 };
+/* Update UI controller */
+function updateUI() {
+	updateStats()
+	linearChart()
+}
+
+function fetchData(userCountry) {
+	countryName.innerHTML = 'Loading...'
+	caseData = [], recoverData = [], deathData = [], dates = [], formateDates = [];
+	fetch(`https://api.covid19api.com/total/dayone/country/${userCountry}`)
+		.then(response => {
+			return response.json()
+		})
+		.then(data => {
+			data.forEach(date => {
+				let allDate = date.Date;
+				let arrDate = allDate.split('T')
+				arrDate.pop();
+				dates.push(...arrDate)
+				appData.push(date)
+				caseData.push(date.Confirmed)
+				recoverData.push(date.Recovered)
+				deathData.push(date.Deaths)
+			})
+		})
+		.then(() => {
+			updateUI()
+		})
+}
+fetchData(userCountry);
 
 /* Format Dates */
 let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
