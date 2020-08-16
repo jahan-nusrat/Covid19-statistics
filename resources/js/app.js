@@ -872,8 +872,9 @@ function showPrevData(arr) {
 }
 
 /* Chart Update */
+let myChart;
+
 function linearChart() {
-	let myChart;
 	if (myChart) {
 		myChart.destroy()
 	}
